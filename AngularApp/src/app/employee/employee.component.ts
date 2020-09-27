@@ -38,12 +38,14 @@ export class EmployeeComponent implements OnInit {
         this.refreshEmployeeList();
         M.toast({ html: "Saved successfully", classes: "rounded" });
       });
+      window.location.reload();
     } else {
       this.employeeService.putEmployee(form.value).subscribe((res) => {
         this.resetForm(form);
         this.refreshEmployeeList();
         M.toast({ html: "Updated successfully", classes: "rounded" });
       });
+      window.location.reload();
     }
   }
 
@@ -64,6 +66,7 @@ export class EmployeeComponent implements OnInit {
         this.resetForm(form);
         M.toast({ html: "Deleted successfully", classes: "rounded" });
       });
+      window.location.reload();
     }
   }
 }
