@@ -17,10 +17,42 @@ input.ng-invalid.ng-dirty {
   font-weight: bold;
 }
 
-.btn-custom,
+/* .btn-custom,
 .btn-custom:hover,
 .btn-custom:focus {
   background-color: transparent;
+  font-size: 1.1rem;
+  margin: 0px 5px;
+  border: #fff solid 1px;
+  text-transform: none;
+} */
+
+.btn-success {
+  background-color: green;
+  font-size: 1.1rem;
+  margin: 0px 5px;
+  border: #fff solid 1px;
+  text-transform: none;
+}
+
+.btn-success:hover {
+  background-color: green;
+  font-size: 1.1rem;
+  margin: 0px 5px;
+  border: #fff solid 1px;
+  text-transform: none;
+}
+
+.btn-info {
+  background-color: blue;
+  font-size: 1.1rem;
+  margin: 0px 5px;
+  border: #fff solid 1px;
+  text-transform: none;
+}
+
+.btn-info:hover {
+  background-color: blue;
   font-size: 1.1rem;
   margin: 0px 5px;
   border: #fff solid 1px;
@@ -58,4 +90,14 @@ a.action-btn:hover {
   right: auto !important;
   bottom: 10%;
   left: 7%;
+}
+
+@media (max-width: 640px) {
+  #toast-container {
+    width: 50% !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: 10%;
+    left: 7%;
+  }
 }
